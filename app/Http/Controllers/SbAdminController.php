@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\bashloard;
+use App\datatable;
 use Illuminate\Http\Request;
 
 class SbAdminController extends Controller
@@ -13,8 +14,10 @@ class SbAdminController extends Controller
        {
         case "index.html":
            $posts = bashloard::all();
+           $tables = datatable::all();
             $data = [
                 'posts' => $posts,
+                'tables' => $tables,
             ];
            return view('SBAdmin.index',$data);
         break;
