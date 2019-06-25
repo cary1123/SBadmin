@@ -23,7 +23,7 @@
 
     @include('layouts.partials.navigation')
 
-    @include('layouts.partials.content')
+    @yield('page-content')
 </div>
 <!-- /#wrapper -->
 

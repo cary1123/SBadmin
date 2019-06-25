@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\bashloard;
 use Illuminate\Http\Request;
 
 class SbAdminController extends Controller
@@ -11,7 +12,11 @@ class SbAdminController extends Controller
       switch($page)
        {
         case "index.html":
-           return view('SBAdmin.index');
+           $posts = bashloard::all();
+            $data = [
+                'posts' => $posts,
+            ];
+           return view('SBAdmin.index',$data);
         break;
         case "login.html":
            return view('SBAdmin.login');
@@ -36,4 +41,5 @@ class SbAdminController extends Controller
         break;         
        }
     }     
+
 }
