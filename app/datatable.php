@@ -8,4 +8,8 @@ class datatable extends Model
 {
     //
     protected $table='date_table';
+    protected $fillable = [
+        'Age',
+        'Office',
+    ];
 }

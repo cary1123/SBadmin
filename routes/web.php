@@ -12,6 +12,7 @@
 */
 
 Route::get('/{id?}', 'SbAdminController@index');
+Route::get('orm/{id?}', 'SbAdminController@orm');
 //Route::get('index.html', 'SbAdminController@index');
 //Route::get('login.html', 'SbAdminController@login');
 //Route::get('register.html', 'SbAdminController@register');

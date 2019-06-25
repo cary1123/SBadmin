@@ -43,6 +43,44 @@ class SbAdminController extends Controller
            return view('SBAdmin.tables');
         break;         
        }
-    }     
+    }
 
+    public function orm($id)
+    {
+        switch ($id)
+        {
+            case "update":
+                $post = datatable::find(1);
+                $post->update([
+                    'Age' => '23',
+                    'Office' => '法國',
+                ]);
+                $post->save();
+                break;
+            case "delete":
+                $post = datatable::find(3);
+                $post->delete();
+                break;
+            default:
+                break;
+        }
+//        $post = Post::create([
+//
+//        ]);
+
+//        $post = Post::find(1);
+//        $post->update([
+//            'title' => 'updated title',
+//            'content' => 'updated content',
+//        ]);
+
+//        $post->title = 'save title';
+//        $post->content = 'save content';
+//        $post->save();
+
+//        $post->delete();
+
+//Post::destroy([2,5,7]);
+
+    }
 }
