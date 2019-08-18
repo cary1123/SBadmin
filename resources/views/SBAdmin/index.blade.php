@@ -52,10 +52,14 @@
             <div class="card mb-3">
                 <div class="card-header">
                     <i class="fas fa-table"></i>
-                    Data Table Example</div>
+                    Data Table Example
+                    <a href="{{ route('SbAdmin.create') }}" class="btn btn-info">新增</a>
+                </div>
                 <div class="card-body">
                     <div class="table-responsive">
+
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+
                             <thead>
                             <tr>
                                 <th>Name</th>
@@ -64,6 +68,7 @@
                                 <th>Age</th>
                                 <th>Start date</th>
                                 <th>Salary</th>
+                                <th>功能</th>
                             </tr>
                             </thead>
                             <tfoot>
@@ -74,6 +79,7 @@
                                 <th>Age</th>
                                 <th>Start date</th>
                                 <th>Salary</th>
+                                <th>功能</th>
                             </tr>
                             </tfoot>
                             <tbody>
@@ -85,32 +91,16 @@
                                     <td>{{ $data->Age }}</td>
                                     <td>{{ $data->StartDate }}</td>
                                     <td>{{ $data->Salary }}</td>
+                                    <td>
+                                        <a href="{{ route('SbAdmin.edit', $data->id) }}" class="btn btn-info">編輯</a>
+                                        <form action="{{ route('SbAdmin.destroy', $data->id) }}" method="POST">
+                                            {{ csrf_field() }}
+                                            {{ method_field('DELETE') }}
+                                              <button type="submit" class="btn btn-danger">刪除</button>
+                                        </form>
+                                    </td>
                                 </tr>
                             @endforeach
-                            <tr>
-                                <td>Shad Decker</td>
-                                <td>Regional Director</td>
-                                <td>Edinburgh</td>
-                                <td>51</td>
-                                <td>2008/11/13</td>
-                                <td>$183,000</td>
-                            </tr>
-                            <tr>
-                                <td>Michael Bruce</td>
-                                <td>Javascript Developer</td>
-                                <td>Singapore</td>
-                                <td>29</td>
-                                <td>2011/06/27</td>
-                                <td>$183,000</td>
-                            </tr>
-                            <tr>
-                                <td>Donna Snider</td>
-                                <td>Customer Support</td>
-                                <td>New York</td>
-                                <td>27</td>
-                                <td>2011/01/25</td>
-                                <td>$112,000</td>
-                            </tr>
                             </tbody>
                         </table>
                     </div>
