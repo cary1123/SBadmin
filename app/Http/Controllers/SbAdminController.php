@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SbAdminRequest;
 use App\bashloard;
 use App\datatable;
 use Illuminate\Http\Request;
@@ -43,6 +44,49 @@ class SbAdminController extends Controller
            return view('SBAdmin.tables');
         break;         
        }
+    }
+    public function create()
+    {
+
+        return view('SBAdmin.create');
+    }
+
+    public function store(SbAdminRequest $request)
+    {
+        //dd($request);
+        $data = $request->all();
+
+        $post = datatable::create($data);
+
+        //return redirect()->route('SBAdmin.index');
+        return redirect()->route('SBAdmin.index');
+    }
+
+    public function edit($id)
+    {
+
+        $tables = datatable::findOrFail($id);
+
+        $data = [
+            'tables' => $tables,
+        ];
+
+        return view('SBAdmin.edit', $data);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $tables = datatable::find($id);
+        $tables->update($request->all());
+
+        return redirect()->route('SBAdmin.index');
+    }
+
+    public function destroy($id)
+    {
+        datatable::destroy($id);
+
+        return redirect()->route('SBAdmin.index');
     }
 
     public function orm($id)

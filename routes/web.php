@@ -11,8 +11,17 @@
 |
 */
 
-Route::get('/{id?}', 'SbAdminController@index');
-Route::get('orm/{id?}', 'SbAdminController@orm');
+Route::get('/{id?}', 'SbAdminController@index')->name('SBAdmin.index');
+//Route::get('orm/{id?}', 'SbAdminController@orm');
+
+Route::get('/index.html/create', 'SbAdminController@create')->name('SbAdmin.create');
+Route::post('{id?}', 'SbAdminController@store')->name('SbAdmin.store');
+//Route::get('/{id?}/{did}', 'SbAdminController@show')->name('SbAdmin.show');
+Route::get('/index.html/{id}/edit', 'SbAdminController@edit')->name('SbAdmin.edit');
+Route::patch('/index.html/{id}', 'SbAdminController@update')->name('SbAdmin.update');
+Route::delete('/index.html/{id}', 'SbAdminController@destroy')->name('SbAdmin.destroy');
+
+
 //Route::get('index.html', 'SbAdminController@index');
 //Route::get('login.html', 'SbAdminController@login');
 //Route::get('register.html', 'SbAdminController@register');
