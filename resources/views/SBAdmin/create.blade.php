@@ -34,14 +34,14 @@
                         <section class="col col-6">
                             <label class="label">Name</label>
                             <label class="input">
-                                <input type="text" name="Name" id="Name" value="" placeholder="名稱" >
+                                <input type="text" name="Name" id="Name" value="{{ old('Name') }}" placeholder="名稱" >
                             </label>
                         </section>
 
                         <section class="col col-6">
                             <label class="label">Position</label>
                             <label class="input">
-                                <input type="text" name="Position" id="Position" value="" placeholder="Position">
+                                <input type="text" name="Position" id="Position" value="{{ old('Position') }}" placeholder="Position">
                             </label>
                         </section>
                     </div>
@@ -49,14 +49,14 @@
                         <section class="col col-6">
                             <label class="label">Office</label>
                             <label class="input">
-                                <input type="text" name="Office" id="Office" value="" placeholder="Office" >
+                                <input type="text" name="Office" id="Office" value="{{ old('Office') }}" placeholder="Office" >
                             </label>
                         </section>
 
                         <section class="col col-6">
                             <label class="label">Age</label>
                             <label class="input">
-                                <input type="text" name="Age" id="Age" value="" placeholder="Age">
+                                <input type="text" name="Age" id="Age" value="{{ old('Age') }}" placeholder="Age">
                             </label>
                         </section>
                     </div>
@@ -64,14 +64,14 @@
                         <section class="col col-6">
                             <label class="label">Start Date</label>
                             <label class="input">
-                                <input type="text" name="StartDate" id="StartDate" value="" placeholder="Start Date" >
+                                <input type="text" name="StartDate" id="StartDate" value="{{ old('StartDate') }}" placeholder="Start Date" >
                             </label>
                         </section>
 
                         <section class="col col-6">
                             <label class="label">Salary</label>
                             <label class="input">
-                                <input type="text" name="Salary" id="Salary" value="" placeholder="Salary">
+                                <input type="text" name="Salary" id="Salary" value="{{ old('Salary') }}" placeholder="Salary">
                             </label>
                         </section>
                     </div>

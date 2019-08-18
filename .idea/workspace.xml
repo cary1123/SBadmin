@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a61ddad-36ea-48cb-a9dc-ef1266941781" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/SBAdmin/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/SBAdmin/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SbAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SbAdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/datatable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/datatable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/SBAdmin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/SBAdmin/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/partials/css.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/css.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/SbAdminRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/SbAdminRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/SBAdmin/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/SBAdmin/create.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SbAdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="80" selection-start-line="80" selection-end-line="80" />
+            <state relative-caret-position="352">
+              <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
               <folding>
                 <element signature="e#40#77#0#PHP" expanded="true" />
               </folding>
@@ -46,10 +41,19 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/SbAdminRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/SBAdmin/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="-114">
               <caret column="23" selection-start-column="23" selection-end-column="23" />
             </state>
           </provider>
@@ -65,19 +69,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/SBAdmin/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="87" column="45" lean-forward="true" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/SBAdmin/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="29" column="47" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="47" />
+            <state relative-caret-position="361">
+              <caret line="73" column="63" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -113,13 +108,13 @@
         <option value="$PROJECT_DIR$/resources/views/SBAdmin/blank.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/SBAdmin/tables.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/partials/css.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/SBAdmin/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/SbAdminRequest.php" />
         <option value="$PROJECT_DIR$/app/datatable.php" />
         <option value="$PROJECT_DIR$/resources/views/SBAdmin/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/SBAdmin/edit.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SbAdminController.php" />
+        <option value="$PROJECT_DIR$/resources/views/SBAdmin/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/SbAdminRequest.php" />
       </list>
     </option>
   </component>
@@ -207,7 +202,7 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="48" />
     <option name="y" value="327" />
     <option name="width" value="1346" />
@@ -236,6 +231,13 @@
               <item name="SBAdmin" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SBAdmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SBAdmin" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Requests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SBAdmin" type="b2602c69:ProjectViewProjectNode" />
@@ -330,12 +332,12 @@
       <workItem from="1561447992019" duration="1733000" />
       <workItem from="1561450598509" duration="5833000" />
       <workItem from="1565860391906" duration="8463000" />
-      <workItem from="1566118357978" duration="6717000" />
+      <workItem from="1566118357978" duration="7802000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29529000" />
+    <option name="totallyTimeSpent" value="30614000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -551,13 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/SbAdminRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/SBAdmin/404.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
@@ -579,20 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/SBAdmin/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="29" column="47" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/SBAdmin/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -600,13 +581,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/SBAdmin/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SbAdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="352">
+          <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
           <folding>
             <element signature="e#40#77#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/SBAdmin/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="73" column="63" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/SbAdminRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
         </state>
       </provider>
     </entry>

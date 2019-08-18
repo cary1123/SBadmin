@@ -24,7 +24,9 @@ class SbAdminRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'Age' => 'integer|max:100|min:0',
+            'StartDate' => 'date',
+            'Salary' => 'integer',
         ];
     }
 }
